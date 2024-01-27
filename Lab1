@@ -1,0 +1,30 @@
+/*For the lab assignment, write a C program that prints a prompt requesting an integer. Read this integer
+into a variable. Prompt the user to enter a second integer. Read this integer into another variable.
+• Print the values of both variables that were entered by the user.
+• Print the value of the first variable times the second variable.
+• Print the value of the second variable divided by the first variable.
+• Print the value of the first variable plus 5, quantity times the second variable (e.g.: Imagine you
+named the first variable X and the second variable Y. If X is 3 and Y is 2 then X plus 5 quantity
+times Y is 16 because X plus 5 is 8 and 8 times 2 is 16).
+• Print the values of both original variables again to show that they did not change.*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int x, y; //initializes the two integers that we will be using
+
+    printf("Please input an integer: \n");
+    scanf("%d", &x); //scans the first integer input by the user
+    printf("Please input another integer: \n");
+    scanf("%d", &y); //scans the second integer input by the user
+    printf("The first integer you entered is %d and the second integer you entered is %d\n", x,y); 
+    //reads the first and second integer to the user
+
+    printf("Multiplying those integers will equal: %d\n", x*y);//multiplies the integers
+    printf("Dividing the second integer by the first integer will equal: %d\n", y/x);//divides the two integers
+    printf("The whacky equation equals to: %d\n", (x+5)*y); //this is the whacky equation
+    printf("The first integer you entered was %d and the second was %d\n", x, y); //reads back the two integers the user chose
+
+    return 0;
+}
